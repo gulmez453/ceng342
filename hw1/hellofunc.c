@@ -1,9 +1,15 @@
 #include <stdio.h>
-#include <hellomake.h>
 
-void myPrintHelloMake(void) {
+void calculate(int a, int b, double **array, double *vector, double *total) {
+  for (int i = 0; i < a; i++) {
+    total[i] = 0.0;
+    for (int j = 0; j < b; j++) {
 
-  printf("Hello makefiles!\nI'am Fatih Gulmez 18050171001\n");
+      total[i] += array[i][j] * vector[i];
+
+    }
+
+  }
 
   return;
 }
